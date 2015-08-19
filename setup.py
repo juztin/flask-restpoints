@@ -9,7 +9,7 @@ with open('README.rst') as file:
 
 setup(
     name='Flask-RestPoints',
-    version='0.0.5',
+    version='0.0.6',
     url='http://github.com/juztin/flask-restpoints',
     license='BSD',
     author='Justin Wilson',

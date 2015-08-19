@@ -32,9 +32,9 @@ class RestPoints(object):
 
         app.extensions['restpoints'] = self
         app.restpoints_instance = self
-        app.add_url_rule('/ping', 'ping', ping)
-        app.add_url_rule('/epoch', 'epoch', epoch)
-        app.add_url_rule('/status', 'status', status(self._jobs))
+        app.add_url_rule('/ping/', 'ping', ping)
+        app.add_url_rule('/epoch/', 'epoch', epoch)
+        app.add_url_rule('/status/', 'status', status(self._jobs))
 
     def add_status_job(self, job_func, name=None, timeout=3):
         """Adds a job to be included during calls to the `/status` endpoint.

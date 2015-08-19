@@ -3,6 +3,11 @@ Changelog
 
 .. currentmodule:: Flask-RestPoints
 
+Release 0.0a6
+-------------
+
+ping, epoch, status routes are now canonical.
+
 Release 0.0a5
 -------------
 

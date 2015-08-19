@@ -21,7 +21,7 @@ health check endpoints (ping, epoch, and status) to the Flask application.
         # Ping some Facebook service.
 
 
-get Flask_RestPoints
+get Flask-RestPoints
 ====================
 
 Install `flask`_
@@ -31,7 +31,7 @@ Install `flask`_
 Download the latest release from `Python Package Index`_
 or clone `the repository`_
 
-.. _Flask-Genshi: http://packages.python.org/Flask-RestPoints
+.. _Flask-RestPoints: http://packages.python.org/Flask-RestPoints
 .. _Flask: http://flask.pocoo.org/
 .. _the repository: https://github.com/juztin/flask-restpoints
 .. _Python Package Index: https://pypi.python.org/pypi/Flask-RestPoints
