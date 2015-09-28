@@ -3,6 +3,12 @@ Changelog
 
 .. currentmodule:: Flask-RestPoints
 
+
+Release 0.0a7
+-------------
+
+Endpoints no longer end with a `/`. `/ping/` is now `/ping`, etc..
+
 Release 0.0a6
 -------------
 

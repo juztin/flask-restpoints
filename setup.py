@@ -9,7 +9,7 @@ with open('README.rst') as file:
 
 setup(
     name='Flask-RestPoints',
-    version='0.0.6',
+    version='0.0.7',
     url='http://github.com/juztin/flask-restpoints',
     license='BSD',
     author='Justin Wilson',
@@ -31,6 +31,7 @@ setup(
         'Programming Language :: Python',
         "Programming Language :: Python :: 3.3",
         "Programming Language :: Python :: 3.4",
+        "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3 :: Only",
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
         'Topic :: Software Development :: Libraries :: Python Modules'
