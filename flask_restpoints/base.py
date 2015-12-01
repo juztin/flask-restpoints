@@ -6,11 +6,11 @@
     :license: BSD, see LICENSE for more details.
 """
 
-from flask_restpoints.handlers import ping, epoch, status
+from flask_restpoints.handlers import ping, time, status
 
 
 class RestPoints(object):
-    """Adds/manages healh-check endpoints (ping, epoch, status).
+    """Adds/manages healh-check endpoints (ping, time, status).
 
     Numerous status jobs may be registered, and are invoked during a call to
     the `status` endpoint.
@@ -33,7 +33,7 @@ class RestPoints(object):
         app.extensions['restpoints'] = self
         app.restpoints_instance = self
         app.add_url_rule('/ping', 'ping', ping)
-        app.add_url_rule('/epoch', 'epoch', epoch)
+        app.add_url_rule('/time', 'time', time)
         app.add_url_rule('/status', 'status', status(self._jobs))
 
     def add_status_job(self, job_func, name=None, timeout=3):

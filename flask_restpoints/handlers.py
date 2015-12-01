@@ -1,5 +1,5 @@
 import concurrent.futures
-from time import time
+from datetime import datetime, timezone
 from timeit import timeit
 
 from flask import jsonify
@@ -64,8 +64,13 @@ def ping():
     return "pong"
 
 
-def epoch():
-    """Handler that returns the systems current Epoch time.
-    """
-    seconds = int(time())
-    return str(seconds)
+def time():
+    utc_time = datetime.now(timezone.utc)
+    local_time = utc_time.astimezone()
+    return jsonify({
+        "epoch": int(utc_time.timestamp()),
+        "local": local_time.isoformat(),
+        "offset": local_time.utcoffset().total_seconds()/60/60,
+        "utc": utc_time.isoformat(),
+        "zone": local_time.tzname()
+    })

@@ -2,7 +2,7 @@ Flask-RestPoints
 ================
 
 `Flask-RestPoints`_ is an extension to `Flask`_ that allows adds a few
-health check endpoints (ping, epoch, and status) to the Flask application.
+health check endpoints (ping, time, and status) to the Flask application.
 
 ::
 

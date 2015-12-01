@@ -3,6 +3,10 @@ Changelog
 
 .. currentmodule:: Flask-RestPoints
 
+Release 0.0a8
+-------------
+
+Renamed `/epoch` endpoint to `/time`, and returning more time inforation.
 
 Release 0.0a7
 -------------
